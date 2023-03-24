@@ -12,17 +12,22 @@
 <body>
     <main class="main-container">
         <h1>Etch-A-Sketch</h1>
-        <h4>Grid: </h4>
+        <div id="set-grid-container">
+            <p>Grid:</p>
+            <input id="set-grid"  min="1" max="64" type="range">
+            <p id="grid-label">16x16</p>
+        </div>
         <div id="square-grid"></div>
         <div class="buttons">
-            <button id="color-mode">
+            <button id="color-mode" class="mode-button active-mode" >
                 <p>Color: </p>
-                <input id="color-picker" type="color">
+                <input id="color-picker"type="color">
             </button>
-            <button id="rainbow-mode">Rainbow</button>
-            <button id="eraser-mode">eraser</button>
-            <button id="clear">clear</button>
+            <button id="rainbow-mode" class="mode-button">Rainbow</button>
+            <button id="eraser-mode" class="mode-button">eraser</button>
+            <button id="clear" class="mode-button">clear</button>
         </div>
+        <footer>Copyright © 2023 zCastroz</footer>
     </main>
 </body>
 </html>
